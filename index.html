@@ -8,7 +8,52 @@
 </head>
 <body>
   <!-- YOUR CODE HERE -->
-  
+  <main>
+    <section class="search_area">
+      <div>
+        <form>
+          <input type="text" id="cityname">
+          <button type="submit" id="search_btn">Search</button>
+        </form>
+      </div>
+    </section>
+    <section class="result_area">
+      <div class="result_upperarea">
+        <div class="result_skyimg">
+          <img id="skyimg">
+        </div>
+        <div class="result_maininfo">
+          <span id="result_cityname"></span>
+          <span id="result_temperature"></span>
+        </div>
+      </div>
+      <div class="result_bottomarea">
+        <div>
+          <table>
+            <tr>
+              <th>Country</th>
+              <th id="result_country"></th>
+            </tr>
+            <tr>
+              <th>Timezone</th>
+              <th id="result_timezone"></th>
+            </tr>
+            <tr>
+              <th>Population</th>
+              <th id="result_population"></th>
+            </tr>
+            <tr>
+              <th>Tomorrow's Forecast</th>
+              <th id="result_forecast">
+                <div id="result_forecast_max"></div>
+                <div id="result_forecast_min"></div>
+              </th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
   <script src="./app.js"></script>
 </body>
 </html>
